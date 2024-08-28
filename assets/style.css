@@ -277,11 +277,12 @@ html[dir=rtl] .app__logo-wrapper {
   }
 }
 .app__screenshots-list {
-  display: grid;
-  grid-template-columns: 400px 400px 400px 400px 400px 400px 400px 400px;
-  grid-column-gap: 20px;
   padding: 30px 0;
+  display: flex;
+  column-gap: 2rem;
+  align-items: flex-end;
 }
+
 @media (max-width: 768px) {
   .app__screenshots-list {
     padding: 32px;
@@ -289,7 +290,8 @@ html[dir=rtl] .app__logo-wrapper {
   }
 }
 .app__screenshot {
-  width: 100%;
+  height: 400px;
+  width: auto;
   border-radius: 16px;
   box-shadow: 0 12px 48px rgba(17, 16, 62, 0.12);
   transition: all 0.3s ease-in-out;
@@ -299,6 +301,7 @@ html[dir=rtl] .app__logo-wrapper {
   clip-path: border-box;
   min-height: 128px;
   border: .5px solid black;
+  box-sizing: border-box;
 }
 .app__screenshot:hover {
   box-shadow: 0 24px 48px rgba(17, 16, 62, 0.12);
