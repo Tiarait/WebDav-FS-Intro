@@ -19,9 +19,9 @@
 	<body>
 		<main>
 <header class="app__header container">
-	<div class="app__logo-wrapper"> <img class="app__logo" src="content/image/logo.png" alt="WebDAV FS Server"></div>
+	<div class="app__logo-wrapper"> <a href="./"><img class="app__logo" src="content/image/logo.png" alt="WebDAV FS Server"></a></div>
 	<div class="app__infos">
-		<a href="./WebDav-FS-Intro/">
+		<a href="./">
 			<h1 class="app__name">WebDAV FS Server</h1>
 		</a>
 		<a href="https://tiarait.github.io/">
@@ -130,7 +130,7 @@
 			.then(r => r.text())
 			.then(t => {
 				document.querySelector('.md_preview').innerHTML =
-				microdown.parse(html(t));
+				microdown.parse(t);
 			});
 
 			window.onload = function () {
